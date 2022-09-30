@@ -1,0 +1,274 @@
+/*General styling*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+button{
+    background-color: #D9D9D94D;
+}
+
+body{
+    background-color: #ffffff;
+    color: #1E1E1E;
+}
+
+html{
+    font-size: 16px;
+    font-family: "Lato";
+}
+
+html:hover{
+    cursor: default;
+}
+
+h5{
+    font-size: 16px;
+    font-family: "Lato";
+    transition: 1s all;
+    font-weight: 200;
+}
+
+h6{
+    font-size: 12px;
+    font-family: "Lato";
+    transition: 1s all;
+    font-weight: 200;
+}
+
+main{
+    height: 80vh;
+}
+
+/*Dark mode*/
+
+.bodyDarkMode{
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.iconsDarkMode{
+    filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(210deg) brightness(100%) contrast(106%);
+}
+
+/*Index*/
+
+.container{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+header{
+    height: 10vh;
+}
+
+#headerContainer{
+    display:flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pageConfig{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:180px;
+    gap: 8px;
+}
+
+.pageTitle a{
+    color: inherit;
+}
+
+.pageConfig button{
+    text-align: center  ;
+    color: inherit;
+    border: none;
+    border-radius: 8px;
+    padding: 0 0;
+    font-family: "Lato";
+    transition: 0.5s all;
+    height: 32px;
+    width: 100%;
+}
+
+.pageConfig button:hover,.pageConfig img{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#menuBox{
+    width: 148px;
+    height: fit-content;
+    padding:16px;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    background-color: rgba(40, 40, 40, 0.061);
+    border-radius: 8px;
+    display: block;
+    transition: 2s all;
+}
+
+#menuBox ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#menuBox li{
+    align-items: center;
+    display: flex;
+    gap: 16px;
+}
+
+#menuBox li:last-child{
+    align-items: center;
+    justify-content: center;
+}
+
+#menuBox input{
+    width: 16px;
+    height: 16px;
+}
+
+#menuBox img{
+    height: 24px;
+    margin-top: 8px;
+}
+
+#exitscreen{
+    display: none;
+}
+
+#timeContainer{
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#hourBox{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#amPmBox{
+    font-size: 2rem;
+    font-weight: 300;   
+}
+
+#dateContainer{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#dateBox{
+    font-size: 1rem;
+    font-weight: 300;   
+}
+
+span{
+    transition: 2s all;
+}
+
+span:hover{
+    cursor:default;
+    transform: scale(1.02);
+}
+
+footer{
+    height: 10vh;
+}
+
+#footerContainer{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center; 
+}
+
+.socialMedia{
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    color: inherit;
+    display:inherit;
+    gap: 16px;
+    justify-content: center;
+    padding: 4px 8px;
+}
+
+.socialIcons{
+    align-items: center;
+    display:inherit;
+    gap: 8px;
+    justify-content: center;
+}
+
+.socialIcons img:hover{
+    transform: scale(1.1);
+}
+
+.pageConfig img,.socialIcons img{
+    width: 20px;
+    height: 20px;
+    transition: 1s all;
+}
+
+/*Media queries*/
+
+@media (min-width: 768px){
+    html,h5 {
+        font-size: 24px;
+    }
+    h6{
+        font-size: 16px;
+    }
+
+    .pageConfig{
+        width:320px;
+        gap: 8px;
+    }
+
+    .pageConfig button{
+        height: 40px;
+    }
+
+    #menuBox{
+        width:288px;
+    }
+
+    .pageConfig img, .socialIcons img{
+        width: 24px;
+        height: 24px;
+    }  
+}
+
+@media (min-width: 1080px){
+    html {
+        font-size: 32px;
+    }
+}
+
+@media (max-height: 540px){
+    html{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 12px;
+    }
+}

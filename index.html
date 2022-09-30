@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;600&display=swap" rel="stylesheet">
+    <title>ClockApp_</title>
+</head>
+
+<body>
+
+    <header>
+        <section class="container">
+            <div id="headerContainer">
+                <div class="pageTitle">
+                    <a href=""><h5>ClockApp_</h5></a>
+                </div>
+                <div class="pageConfig">
+                    <button id="nightMode" onclick="darkMode()"><h6>Night mode</h6></button>
+                    <button id="fullscreen" onclick="fullScreen()"><h6>Full screen</h6></button>
+                    <button id="exitscreen" onclick="exitFullScreen()"><h6>Window</h6></button>
+                    <img class="icon" src="Imagenes/sliders2.svg" alt="config slider" onclick="openMenu()">
+                </div>
+            </div>
+        </section>
+        <section id="menuBox">
+            <ul>
+                <li><input type="checkbox"><h6>Formato de 12 hrs</h6></li>
+                <li><input type="checkbox"><h6>Mostrar segundos</h6></li>
+                <li><img class="icon" src="Imagenes/arrow-bar-up.svg" alt="config slider" onclick="closeMenu()"></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section class="container">
+            <div id="timeContainer">
+                <span id="hourBox"></span>
+                <span id="amPmBox"></span>
+            </div>
+            <div id="dateContainer">
+                <span id="dateBox"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container">
+            <div id="footerContainer">
+                <h6>© 2022 | Jesus Palomino</h6>
+                <button class="socialMedia">
+                    <h6>contact me</h6>
+                    <div class="socialIcons">
+                        <a class="icon" href="https://www.linkedin.com/in/jesus-r-palomino-m"><img src="Imagenes/linkedin.svg" alt="linkedin icon"></a>
+                        <a class="icon" href="https://github.com/JesusPal10"><img src="Imagenes/github.svg" alt="github icon"></a>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
