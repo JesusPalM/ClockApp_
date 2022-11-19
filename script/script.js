@@ -1,10 +1,9 @@
-//Time//
-
+//Time
 function currentTime(){
     let date = new Date();
-    let hour = (date.getHours()-12); 
-    let min = date.getMinutes();
-    let sec = date.getSeconds();
+    const hour = date.getHours();
+    const min = date.getMinutes();
+    const sec = date.getSeconds();
     if(hour<=9){
         hour = "0" + hour;
     }
@@ -14,18 +13,18 @@ function currentTime(){
     if(sec<=9){
         sec = "0" + sec;
     }
-    if(date.getHours()>=12) {
+    if(date.getHours()>=12 && date.getSeconds()>=0){
         var am = "PM";
     }
     else{
         var am = "AM";     
     }   
-    document.getElementById("hourBox").innerHTML =  hour + ":" + min + ":" + sec;
+    document.getElementById("hourBox").innerHTML = hour + ":" + min + ":" + sec;
     document.getElementById("amPmBox").innerHTML = am;
     setTimeout(currentTime,1000);
 }
 
-let date = new Date();
+date = new Date();
 
 function currentDateNumber(){
     let year = date.getFullYear();
@@ -41,27 +40,30 @@ function currentDateNumber(){
 }
 
 function currentDateName(){
-    var dateName = date.toDateString();
-    return dateName;
+    let dateName = date.toDateString();
+    document.getElementById("dateBox").innerHTML = dateName;
 }
 
-document.getElementById("dateBox").innerHTML = currentDateName();
+currentDateName();
 currentTime();
 
-//Screen//
+//Screen
 
-var nightMode = document.getElementById("nightMode");
-var exitscreen = document.getElementById("exitscreen");
-var fullscreen = document.getElementById("fullscreen");
+const nightMode = document.getElementById("nightMode");
+const exitscreen = document.getElementById("exitscreen");
+const fullscreen = document.getElementById("fullscreen");
+const ClockApp_ = document.getElementById("ClockApp_");
+const footerContainer = document.getElementById("footerContainer");
 
 function fullScreen(){
-    
-    var element = document.documentElement;
+    let element = document.documentElement;
     if (element.requestFullscreen) {
     element.requestFullscreen();
     }
     fullscreen.style.display = "none";
     exitscreen.style.display = "block";
+    ClockApp_.style.display = "none";
+    footerContainer.style.display = "none";
 }
 
 function exitFullScreen(){
@@ -69,12 +71,14 @@ function exitFullScreen(){
     document.exitFullscreen();
     }
     fullscreen.style.display = "block"; 
-    exitscreen.style.display = "none"; 
+    exitscreen.style.display = "none";
+    ClockApp_.style.display = "block";
+    footerContainer.style.display = "flex"; 
 }
 
-//Interactive Menu//
+//Interactive Menu
 
-var menu = document.getElementById("menuBox")
+const menu = document.getElementById("menuBox");
 
 function closeMenu(){
     menu.style.top = "-100%";
@@ -85,12 +89,12 @@ function openMenu(){
     menu.style.display = "block"; 
 }
 
-//Dark mode toggle_Currently under simplefycation with function bucle//
+//Dark mode toggle. NEEDED A FUNCTION BUCLE
 
 function darkMode(){
     var body = document.body;
     body.classList.toggle("bodyDarkMode");
-
+    
     var icon = document.getElementsByClassName("icon")[0];
     icon.classList.toggle("iconsDarkMode");
 
@@ -101,5 +105,5 @@ function darkMode(){
     icon.classList.toggle("iconsDarkMode");
 
     var icon = document.getElementsByClassName("icon")[3];
-    icon.classList.toggle("iconsDarkMode");
+    icon.classList.toggle("iconsDarkMode");    
 }

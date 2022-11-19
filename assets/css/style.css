@@ -91,7 +91,7 @@ header{
 }
 
 .pageConfig button{
-    text-align: center  ;
+    text-align: center;
     color: inherit;
     border: none;
     border-radius: 8px;
@@ -116,7 +116,7 @@ header{
     top: 10%;
     background-color: rgba(40, 40, 40, 0.061);
     border-radius: 8px;
-    display: block;
+    display: none;
     transition: 2s all;
 }
 
