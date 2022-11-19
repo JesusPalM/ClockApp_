@@ -1,4 +1,8 @@
-//Time
+//Time 
+
+//Bug foung when the sec counter gets to 59 secs.
+//To be fixed currentTime
+
 function currentTime(){
     let date = new Date();
     const hour = date.getHours();
