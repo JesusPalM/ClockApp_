@@ -73,9 +73,9 @@ h6{
 
 body{
     background-image: url(../img/img/01_Hero\ section.jpg);
-    background-image: none;
 }
 
 .container{
+    
     padding: 0 2rem;
 }
