@@ -3,7 +3,7 @@ html{
     font-family: "Montserrat";
     background-color: var(--black-2);
     color: var(--white-0);
-    min-height: 720px;
+    min-height: 640px;
     min-width: 320px;
 }
 
