@@ -7,7 +7,7 @@ html{
     font-family: "Montserrat";
     background-color: var(--black-2);
     color: var(--white-0);
-    min-height: 800px;
+    min-height: 720px;
 }
 
 h1{
