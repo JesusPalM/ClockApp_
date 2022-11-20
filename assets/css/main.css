@@ -1,6 +1,30 @@
 main{
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
+    height: 70vh;
+    gap: 4rem;
+
+}
+
+.local_time{
+    margin-top: auto;
+}
+ 
+.local_hour{
+    display: flex;
+    align-items: baseline;
+}
+
+.local_date{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rcommem;
+}
+
+.world_time{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .cities_time{
@@ -11,9 +35,9 @@ main{
 
 .city_card{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: var(--black-4);
     border-radius: 1rem;
     padding: 1rem;
 }
