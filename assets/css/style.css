@@ -1,3 +1,5 @@
+/*----General styling----*/
+
 html{
     font-size: 16px;
     font-family: "Montserrat";
@@ -70,12 +72,13 @@ h6{
     --icon-white : invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
 }
 
+/*----Body styling----*/
 
 body{
     background-image: url(../img/img/01_Hero\ section.jpg);
+    overflow-x: hidden;
 }
 
-.container{
-    
+.container{    
     padding: 0 2rem;
 }

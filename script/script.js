@@ -1,5 +1,4 @@
-//Time 
-
+/*Time 
 //Bug foung when the sec counter gets to 59 secs.
 //currentTime to be fixed 
 
@@ -22,10 +21,7 @@ function currentTime(){
     }
     else{
         var am = "AM";     
-    }   
-    document.getElementById("hourBox").innerHTML = hour + ":" + min + ":" + sec;
-    document.getElementById("amPmBox").innerHTML = am;
-    setTimeout(currentTime,1000);
+    }
 }
 
 date = new Date();
@@ -51,7 +47,7 @@ function currentDateName(){
 currentDateName();
 currentTime();
 
-//Screen
+Screen
 
 const nightMode = document.getElementById("nightMode");
 const exitscreen = document.getElementById("exitscreen");
@@ -80,19 +76,6 @@ function exitFullScreen(){
     footerContainer.style.display = "flex"; 
 }
 
-//Interactive Menu
-
-const menu = document.getElementById("menuBox");
-
-function closeMenu(){
-    menu.style.top = "-100%";
-}
-
-function openMenu(){
-    menu.style.top = "10%";
-    menu.style.display = "block"; 
-}
-
 //Dark mode toggle. NEEDED A FUNCTION BUCLE
 
 function darkMode(){
@@ -111,3 +94,4 @@ function darkMode(){
     var icon = document.getElementsByClassName("icon")[3];
     icon.classList.toggle("iconsDarkMode");    
 }
+*/
