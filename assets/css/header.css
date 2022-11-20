@@ -1,7 +1,52 @@
 header{
+    height: 15vh;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 15vh;
-    min-height: 100px;
+}
+
+.main_navigation{    
+    position: fixed;
+    inset: 0 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black-3);
+    padding: 20vh 2rem;
+}
+
+.navigation_item{
+    text-decoration: none;
+    color: var(--white-0);
+}
+
+.navigation_item > p{
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 480px){
+    .main_navigation{
+        position: initial;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .navigation_list{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .navigation_item > p{
+        margin-bottom: 0rem;
+    }
+
+    .navigation_icon{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .navigation_list{
+        gap: 2rem;
+    }
 }

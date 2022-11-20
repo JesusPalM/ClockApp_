@@ -1,7 +1,7 @@
 //Time 
 
 //Bug foung when the sec counter gets to 59 secs.
-//To be fixed currentTime
+//currentTime to be fixed 
 
 function currentTime(){
     let date = new Date();
