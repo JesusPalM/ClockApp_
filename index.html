@@ -7,47 +7,61 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <title>ClockApp_</title>
 </head>
 
 <body>
 
-    <header>
-        <section class="container">
-            <div id="headerContainer">
-                <div class="pageTitle">
-                    <a id="ClockApp_" href=""><h5>ClockApp_</h5></a>
-                </div>
-                <div class="pageConfig">
-                    <button id="nightMode" onclick="darkMode()"><h6>Night mode</h6></button>
-                    <button id="fullscreen" onclick="fullScreen()"><h6>Full screen</h6></button>
-                    <button id="exitscreen" onclick="exitFullScreen()"><h6>Window</h6></button>
-                    <img class="icon" src="./assets/img/icons/menu/sliders2.svg" alt="config slider" onclick="openMenu()">
-                </div>
-            </div>
-        </section>
-        <section id="menuBox">
-            <ul>
-                <li><input type="checkbox"><h6>12 hrs format</h6></li>
-                <li><input type="checkbox"><h6>Display seconds</h6></li>
-                <li><input type="checkbox"><h6>Show date in text</h6></li>
-                <li><img class="icon" src="./assets/img/icons/menu/arrow-bar-up.svg" alt="config slider" onclick="closeMenu()"></li>
-            </ul>
+    <header class="header container">
+        <p>ClockApp_</p>
+        <img src="./assets/img/img/" alt="">
+        <section>
+            
+
         </section>
     </header>
 
-    <main>
-        <section class="container">
-            <div id="timeContainer">
-                <span id="hourBox"></span>
-                <span id="amPmBox"></span>
+    <main class="main container">
+        <section class="local_time">
+            <div class="local_time title">
+                <p>Local time</p>
             </div>
-            <div id="dateContainer">
-                <span id="dateBox"></span>
+            <div class="local_hour">
+                <h2>12:00</h2><span><h4>PM</h4></span>
             </div>
+            <div class="local_date">
+                <h5>Sunday, Jan 1</h5>
+                <h6>Lima | Peru Standard Time</h6>    
+            </div>
+        </section>
+        <section class="world_time">
+            <div class="world_time title">
+                <p>World time</p>
+            </div>
+            <ul class="cities_time">
+                <li class="city_card">
+                    <span>
+                        <h4>2:00</h4><p>PM</p>
+                    </span>
+                    <span>
+                        <p>Sao Paolo</p>
+                        <h6>Brasil</h6>
+                    </span>
+                </li>
+                <li class="city_card">
+                    <span>
+                        <h4>2:00</h4><p>PM</p>
+                    </span>
+                    <span>
+                        <p>Add city</p>
+                    </span>
+                </li>
+            </ul>
         </section>
     </main>
 
@@ -65,6 +79,7 @@
             </div>
         </section>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="./script/script.js"></script>
     
