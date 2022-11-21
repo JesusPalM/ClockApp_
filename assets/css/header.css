@@ -28,10 +28,10 @@ header{
 }
 
 .settings_list{
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 1rem;
 }
 
 .navigation_icon{
