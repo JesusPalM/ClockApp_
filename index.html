@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#20242A"/>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
@@ -20,7 +21,7 @@
 
     <header class="header container">
         <p>ClockApp_</p>
-        <nav class="main_navigation">
+        <nav data-main-menu data-visible="false" class="main_navigation">
             <ul class="navigation_list"> 
                 <li>
                     <a class="navigation_item" href=""><p>StopWatch</p></a>
@@ -33,7 +34,7 @@
                 </li>
             </ul>
         </nav>
-        <img class="icon_2 navigation_icon" src="./assets/img/icons/menu/list.svg" alt="">
+        <img data-main-menu-btn class="icon_2 navigation_icon" src="./assets/img/icons/menu/list.svg" alt="">
     </header>
 
     <main class="main container">
@@ -42,7 +43,7 @@
                 <p>Local time</p>
             </div>
             <div class="local_hour">
-                <h2 data-local-hour></h2><h4 data-local-AMPM></h4>
+                <h2 data-local-hour></h2><h4 data-local-amPm></h4>
             </div>
             <div class="local_date">
                 <h5>Sunday, Jan 1</h5>
