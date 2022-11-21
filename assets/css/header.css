@@ -29,7 +29,7 @@ header{
 
 .settings_list{
     margin-top: 0.5rem;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 0.25rem;
 }
@@ -54,10 +54,10 @@ header{
 
     .navigation_list{
         display: flex;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
-    .navigation_item > p{
+    .navigation_item{
         margin-bottom: 0rem;
     }
 

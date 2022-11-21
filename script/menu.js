@@ -30,3 +30,5 @@ mainMenuButton.addEventListener("click",()=>{
         mainMenuButton.style.backgroundImage="url(../../assets/img/icons/menu/list.svg)"
     }
 });
+
+
