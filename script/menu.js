@@ -6,7 +6,7 @@ const slideInDisplay = (element) =>{
 
 const slideOutDisplay = (element) =>{
     element.style.animation = "slideOutDisplay 2s";
-    setTimeout(function(){element.style.display = "git "},2000);
+    setTimeout(function(){element.style.display = "none"},2000);
 }
 
 const mainMenuButton = document.querySelector("[data-main-menu-btn]");
