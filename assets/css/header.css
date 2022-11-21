@@ -20,7 +20,6 @@ header{
 .navigation_item{
     text-decoration: none;
     color: var(--white-0);
-    cursor: pointer;
 }
 
 .navigation_item{
@@ -28,10 +27,15 @@ header{
 }
 
 .settings_list{
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.settings_item{
+    cursor: pointer;
 }
 
 .navigation_icon{
@@ -59,6 +63,11 @@ header{
 
     .navigation_item{
         margin-bottom: 0rem;
+    }
+
+    .settings_list{
+        position: absolute;
+        margin-left: 0rem;
     }
 
     .navigation_icon{

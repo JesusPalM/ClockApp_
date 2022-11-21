@@ -1,7 +1,17 @@
-const tabColor = document.querySelector('meta[name="theme-color"]');
-const buttonLightMode = document.querySelector("[data-theme-light]");
+const toggleDarkMode = document.querySelector("[data-theme-dark]");
+const toggleLightMode = document.querySelector("[data-theme-light]");
+const toggleEarthMode = document.querySelector("[data-theme-earth]");
+const body = document.body;
 
-buttonLightMode.addEventListener("click",()=>{
-    tabColor.setAttribute('content', '#020001');
-    console.log("Light Mode")
+toggleDarkMode.addEventListener("click",()=>{
+    body.style.backgroundImage = "none";
+});
+
+toggleLightMode.addEventListener("click",()=>{
+    body.style.backgroundImage = "none";
+});
+
+toggleEarthMode.addEventListener("click",()=>{
+    body.style.backgroundImage = "url(../../assets/img/img/earth_bg.jpg)";
+    body.style.transition = "background-image 2s";
 });
