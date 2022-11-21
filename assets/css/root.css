@@ -44,20 +44,9 @@ h6{
     font-weight: 200;
 }
 
-.icon_1 , .icon_2, .icon_3{
-    width: 20px;
-    height: 20px;
-    filter: var(--icon-white);
-}
-
-.icon_2{
-    width: 24px;
-    height: 24px;
-}
-
-.icon_3{
-    width: 40px;
-    height: 40px;
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 :root{
@@ -70,6 +59,7 @@ h6{
     --white-0 : #FFFFFF;
 
     --icon-white : invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
+    --icon-black : none;
 }
 
 /*----Body styling----*/
@@ -81,4 +71,12 @@ body{
 
 .container{    
     padding: 0 2rem;
+}
+
+.icon_black{
+    filter: var(--icon-black);
+}
+
+.icon_white{
+    filter: var(--icon-white);
 }

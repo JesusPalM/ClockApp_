@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#20242A"/>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/animations.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -23,18 +23,35 @@
         <p>ClockApp_</p>
         <nav data-main-menu data-visible="false" class="main_navigation">
             <ul class="navigation_list"> 
-                <li>
-                    <a class="navigation_item" href=""><p>StopWatch</p></a>
+                <li class="navigation_item">
+                    <a href=""><p>StopWatch</p></a>
                 </li>
-                <li>
-                    <a class="navigation_item" href=""><p>Timer</p></a>
+                <li class="navigation_item">
+                    <a href=""><p>Timer</p></a>
                 </li>
-                <li>
-                    <a class="navigation_item" href=""><p>Settings</p></a>
+                <li class="navigation_item">
+                    <p>Settings</p>
+                    <nav data-visible="false">
+                        <ul class="settings_list">
+                            <li><h6>12 hours</h6></li>
+                            <li><h6>Seconds</h6></li>
+                            <li><h6>UTC</h6></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="navigation_item">
+                    <p >Theme</p>
+                    <nav data-visible="false">
+                        <ul class="settings_list">
+                            <li><h6>Light</h6></li>
+                            <li><h6>Dark</h6></li>
+                            <li><h6>Earth</h6></li>
+                        </ul>
+                    </nav>
                 </li>
             </ul>
         </nav>
-        <img data-main-menu-btn class="icon_2 navigation_icon" src="./assets/img/icons/menu/list.svg" alt="">
+        <span data-main-menu-btn class="navigation_icon icon_white"></span>
     </header>
 
     <main class="main container">
@@ -46,7 +63,7 @@
                 <h2 data-local-hour></h2><h4 data-local-amPm></h4>
             </div>
             <div class="local_date">
-                <h5>Sunday, Jan 1</h5>
+                <h5 data-local-date></h5></h5>
                 <h6>Lima | Peru Standard Time</h6>    
             </div>
         </section>
@@ -70,7 +87,7 @@
                     </span>
                 </li>
                 <li class="city_card add">
-                    <img class="icon_3" src="./assets/img/icons/menu/plus-circle-fill.svg" alt="">
+                    <span class="add_icon icon_white"></span>
                     <span>
                         <p>Add city</p>
                     </span>
@@ -85,9 +102,9 @@
             <button class="contact">
                     <h6>contact me |</h6>
                     <div class="social_menu">
-                        <a href="https://www.linkedin.com/in/jesus-r-palomino-m"><img class="icon_1" src="./assets/img/icons/social_media/linkedin.svg" alt="linkedin icon"></a>
-                        <a href=""><img class="icon_1" src="./assets/img/icons/social_media/instagram.svg" alt=""></a>
-                        <a href="https://github.com/JesusPalM"><img class="icon_1" src="./assets/img/icons/social_media/github.svg" alt="github icon"></a>
+                        <a href="https://www.linkedin.com/in/jesus-r-palomino-m"><img class="social_icon icon_white" src="./assets/img/icons/social_media/linkedin.svg" alt="linkedin icon"></a>
+                        <a href=""><img class="social_icon icon_white" src="./assets/img/icons/social_media/instagram.svg" alt=""></a>
+                        <a href="https://github.com/JesusPalM"><img class="social_icon icon_white" src="./assets/img/icons/social_media/github.svg" alt="github icon"></a>
                     </div>
             </button>
         </section>

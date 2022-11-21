@@ -60,3 +60,12 @@ main{
     padding: 0 1rem;
     min-height: 80px;
 }
+
+.add_icon{
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/icons/menu/plus-circle-fill.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}

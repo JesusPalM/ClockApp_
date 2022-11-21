@@ -20,14 +20,28 @@ header{
 .navigation_item{
     text-decoration: none;
     color: var(--white-0);
+    cursor: pointer;
 }
 
-.navigation_item > p{
+.navigation_item{
     margin-bottom: 1rem;
 }
 
+.settings_list{
+    margin-top: 0.5rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
 .navigation_icon{
+    width: 24px;
+    height: 24px;
     z-index: 2;
+    background-image: url(../img/icons/menu/list.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
 }
 
 @media (min-width: 480px){
