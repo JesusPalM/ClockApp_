@@ -8,11 +8,11 @@ let hourFormat = "hh:mm";
 function toggleDisplay(element) {
     element.addEventListener("click",()=>{
         const displayStatus = element.getAttribute("data-visible");
-        if(displayStatus == "false"){
+        if(displayStatus === "false"){
             element.setAttribute("data-visible",true);//Already hide to visible
             hourFormat = testArray[0];
         }
-        else if(displayStatus == "true"){
+        else{
             element.setAttribute("data-visible",false);//Already visible to hide
             hourFormat = testArray[1]; 
         }
