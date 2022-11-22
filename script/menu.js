@@ -18,7 +18,6 @@ const mainMenu = document.querySelector("[data-main-menu]");
 
 mainMenuButton.addEventListener("click",()=>{
     const displayStatus = mainMenu.getAttribute("data-visible");
-
     if(displayStatus == "false"){
         mainMenu.setAttribute("data-visible",true);
         slideInDisplay(mainMenu);
@@ -30,5 +29,3 @@ mainMenuButton.addEventListener("click",()=>{
         mainMenuButton.style.backgroundImage="url(../../assets/img/icons/menu/list.svg)"
     }
 });
-
-
