@@ -35,7 +35,9 @@ header{
 }
 
 .settings_item{
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .navigation_icon{

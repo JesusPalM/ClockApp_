@@ -2,7 +2,7 @@
 
 html{
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     background-color: var(--black-2);
     color: var(--white-0);
     min-height: 640px;
