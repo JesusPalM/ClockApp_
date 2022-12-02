@@ -40,6 +40,20 @@ header{
     gap: 0.25rem;
 }
 
+.navigation_checkbox{
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    background-color: var( --black-5);
+    cursor: pointer;
+}
+
+.navigation_checkbox:checked{
+    background-color: var( --black-3);
+    background-image: url(../img/icons/menu/check-lg.svg);
+}
+
 .navigation_icon{
     width: 24px;
     height: 24px;
