@@ -36,4 +36,23 @@ const localTime = () => {
     date.innerHTML = currentDate;
 }
 
-setInterval(localTime,1000)
+setInterval(localTime,1000);
+
+/*
+function checkedToggle (toggle, _time, desiredState){
+    if(toggle.checked == true){
+        _time = desiredState; 
+        console.log(_time);
+    }
+    else{
+        _time = _time;
+        console.log(_time);
+    } 
+}
+
+toggle24hours.addEventListener("click", function(){checkedToggle(toggle24hours, hours, "HH")});
+toggleSeconds.addEventListener("click", function(){checkedToggle(toggleSeconds,seconds,":ss")});
+
+let hours = "hh";
+let seconds = "";
+*/

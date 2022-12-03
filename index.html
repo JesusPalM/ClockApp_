@@ -21,6 +21,7 @@
 
     <header class="header container">
         <p>ClockApp_</p>
+        <span data-main-menu-btn class="navigation_icon icon_white"></span>
         <nav data-main-menu data-visible="false" class="main_navigation">
             <ul class="navigation_list"> 
                 <li class="navigation_item">
@@ -30,8 +31,8 @@
                     <a href=""><p>Timer</p></a>
                 </li>
                 <li class="navigation_item">
-                    <p>Settings</p>
-                    <nav data-visible="false">
+                    <p class="settings_button" data-settings-btn>Settings</p>
+                    <nav data-settings data-visible="false">
                         <ul class="settings_list">
                             <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings-hours24><h6>24 hours</h6></li>
                             <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings-seconds><h6>Seconds</h6></li>
@@ -40,8 +41,8 @@
                     </nav>
                 </li>
                 <li class="navigation_item">
-                    <p >Theme</p>
-                    <nav data-visible="false">
+                    <p class="theme_button" data-theme-btn>Theme</p>
+                    <nav data-theme data-visible="false">
                         <ul class="settings_list">
                             <li class="settings_item" data-theme-dark><input class="navigation_checkbox" type="checkbox"><h6>Dark</h6></li>
                             <li class="settings_item" data-theme-light><input class="navigation_checkbox" type="checkbox"><h6>Light</h6></li>
@@ -51,7 +52,6 @@
                 </li>
             </ul>
         </nav>
-        <span data-main-menu-btn class="navigation_icon icon_white"></span>
     </header>
 
     <main class="main container">
