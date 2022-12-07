@@ -46,17 +46,17 @@ const setingsMenu = document.querySelector("[data-settings]");
 const themeButton = document.querySelector("[data-theme-btn]");
 const themeMenu = document.querySelector("[data-theme]");
 
-function displayOK (object){
+function displaySettings (object){
     let displayStatus = object.getAttribute("data-visible");
     if(displayStatus === "false"){
-        object.setAttribute("data-visible", true);
-        slideInDisplay(object);
+        object.setAttribute("data-visible",true);
+        object.style.display = "flex";
     }
     else{
-        object.setAttribute("data-visible", false);
-        slideOutDisplay(object);   
+        object.setAttribute("data-visible",false);
+        object.style.display = "none"; 
     }
 };
 
-settingsButton.addEventListener("click",()=>{displayOK(setingsMenu)});
-themeButton.addEventListener("click",()=>{displayOK(themeMenu)});
+settingsButton.addEventListener("click",()=>{displaySettings(setingsMenu);});
+themeButton.addEventListener("click",()=>{displaySettings(themeMenu);});

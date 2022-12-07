@@ -27,6 +27,10 @@ header{
     cursor: pointer;
 }
 
+.settings_nav_list{
+    display: none;
+}
+
 .settings_list{
     height: 100px;
     margin-top: 1rem;
