@@ -1,11 +1,11 @@
 //Slide animation display
 
-function slideInDisplay(element) {
+const slideInDisplay = (element)=>{
     element.style.animation = "slideInDisplay 1s";
     element.style.display = "flex";
 }
 
-const slideOutDisplay = (element) =>{
+const slideOutDisplay = (element)=>{
     element.style.animation = "slideOutDisplay 1s";
     setTimeout(()=>{element.style.display = "none"},900);
 }
@@ -14,6 +14,15 @@ const slideOutDisplay = (element) =>{
 
 const mainMenuButton = document.querySelector("[data-main-menu-btn]");
 const mainMenu = document.querySelector("[data-main-menu]");
+
+const mainMenuDesktop = () => {
+    if(window.innerWidth >= 480){
+        mainMenu.style.animation = "none";
+        mainMenu.style.display = "flex";
+    }else{};
+};
+
+setInterval(mainMenuDesktop,50);
 
 mainMenuButton.addEventListener("click",()=>{
     let displayStatus = mainMenu.getAttribute("data-visible");
@@ -51,5 +60,3 @@ function displayOK (object){
 
 settingsButton.addEventListener("click",()=>{displayOK(setingsMenu)});
 themeButton.addEventListener("click",()=>{displayOK(themeMenu)});
-
-//Theme display
