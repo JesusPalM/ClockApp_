@@ -69,3 +69,14 @@ main{
     background-size: cover;
     cursor: pointer;
 }
+
+@media (min-width: 540px){
+    .cities_time{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+        grid-template-rows: auto;
+        column-gap: 2%;
+        row-gap: 4%;
+    };
+};
+
