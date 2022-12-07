@@ -75,24 +75,10 @@
                 <li class="city_card">
                     <div class="city_time">
                         <span class="city_hour">
-                            <h4>00:00</h4><p>PM</p>
+                            <h4>--:--</h4>
                         </span>
                         <span class="city_date">
-                            <h6>Sunday, Jan 1</h6>
-                        </span>
-                    </div>
-                    <span class="city_info">
-                        <p>City</p>
-                        <h6>Country</h6>
-                    </span>
-                </li>
-                <li class="city_card">
-                    <div class="city_time">
-                        <span class="city_hour">
-                            <h4>00:00</h4><p>PM</p>
-                        </span>
-                        <span class="city_date">
-                            <h6>Sunday, Jan 1</h6>
+                            <h6>--</h6>
                         </span>
                     </div>
                     <span class="city_info">
@@ -101,10 +87,14 @@
                     </span>
                 </li>
                 <li class="city_card add">
-                    <span class="add_icon icon_white"></span>
-                    <span>
-                        <p>Add city</p>
-                    </span>
+                    <input class="add_city" type="text" placeholder="Add city" list="cities_time_avaliable">
+                    <datalist id="cities_time_avaliable">
+                        <option value="New York">New York</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Washington">Washington</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Tokio">Tokio</option>
+                    </datalist>
                 </li>
             </ul>
         </section>
@@ -116,9 +106,9 @@
             <button class="contact">
                     <h6>contact me |</h6>
                     <div class="social_menu">
+                        <a href="https://github.com/JesusPalM"><img class="social_icon icon_white" src="./assets/img/icons/social_media/github.svg" alt="github icon"></a>
                         <a href="https://www.linkedin.com/in/jesus-r-palomino-m"><img class="social_icon icon_white" src="./assets/img/icons/social_media/linkedin.svg" alt="linkedin icon"></a>
                         <a href=""><img class="social_icon icon_white" src="./assets/img/icons/social_media/instagram.svg" alt=""></a>
-                        <a href="https://github.com/JesusPalM"><img class="social_icon icon_white" src="./assets/img/icons/social_media/github.svg" alt="github icon"></a>
                     </div>
             </button>
         </section>
@@ -126,8 +116,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.1.0/luxon.min.js"></script>
-    <script src="./script/theme.js"></script>
     <script src="./script/menu.js"></script>
+    <script src="./script/theme.js"></script>
     <script src="./script/localTime.js"></script>
     
 </body>

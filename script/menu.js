@@ -37,7 +37,7 @@ const menuDesktopDisplay = () => {
     }
     while(window.innerWidth <= 480 && mainMenuVisibility === "true"){
         mainMenu.style.display = "flex";
-        mainMenuButton.style.backgroundImage="url(../../assets/img/icons/menu/x.svg)"
+        mainMenuButton.style.backgroundImage="url(../../assets/img/icons/menu/x.svg)";
         break;
     }
 };

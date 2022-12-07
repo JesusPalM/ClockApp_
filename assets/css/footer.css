@@ -8,7 +8,7 @@
     min-height: 100px;
 }
 
-button{
+.contact{
     font-family:  inherit;
     display: flex;
     align-items: center;
@@ -32,4 +32,20 @@ button{
 .social_icon{
     width: 20px;
     height: 20px;
+}
+
+@media (min-width: 540px){
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact{
+        max-width: 240px;
+    }
+}
+
+@media (min-width: 768px){
+    .contact{
+        max-width: 360px;
+    }
 }

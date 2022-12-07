@@ -58,7 +58,7 @@ main{
     background-color: var(--black-4);
     border-radius: 1rem;
     padding: 0 1rem;
-    min-height: 80px;
+    min-height: 72px;
 }
 
 .add_icon{
@@ -68,6 +68,33 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+}
+
+.add_city{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    color: var(--white-0);
+    outline: none;
+    background-image: url('../img/icons/menu/plus-circle.svg');
+    background-position: right;
+    background-size: contain;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+.add_city::placeholder{
+    font-family: inherit;
+    color: inherit;
+}
+
+.add_city:focus, .add_city:hover{
+    background-image: none;
+    cursor: text;
 }
 
 @media (min-width: 540px){
