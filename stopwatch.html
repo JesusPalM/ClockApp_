@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#20242A"/>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/animations.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/root/reset.css">
+    <link rel="stylesheet" href="./assets/css/root/root.css">
+    <link rel="stylesheet" href="./assets/css/root/animations.css">
+    <link rel="stylesheet" href="./assets/css/root/header.css">
+    <link rel="stylesheet" href="./assets/css/stopwatch/main.css">
+    <link rel="stylesheet" href="./assets/css/root/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Stopwatch | ClockApp_</title>
@@ -17,12 +18,12 @@
 <body>
 
     <header class="header container">
-        <span class="page_title">StopWatch_</span>
+        <span class="page_title">Stopwatch_</span>
         <span data-main-menu-btn class="navigation_icon icon_white"></span>
         <nav data-main-menu data-visible="false" class="main_navigation">
             <ul class="navigation_list"> 
                 <li class="navigation_item">
-                    <a href="./index.html"><p>Home</p></a>
+                    <a href="./stopwatch.html"><p>StopWatch</p></a>
                 </li>
                 <li class="navigation_item">
                     <a href="./timer.html"><p>Timer</p></a>
@@ -31,9 +32,8 @@
                     <p class="settings_button" data-settings-btn>Settings</p>
                     <nav class="settings_nav_list" data-settings data-visible="false">
                         <ul class="settings_list">
-                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings><h6>New setting</h6></li>
-                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings><h6>New setting</h6></li>
-                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings><h6>New setting</h6></li>
+                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings-hours24><h6>Display<br>seconds</h6></li>
+                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings-seconds><h6>Display<br>seconds</h6></li>
                         </ul>
                     </nav>
                 </li>
@@ -52,7 +52,16 @@
         </nav>
     </header>
 
-    <main></main>
+    <main class="stopwatch container">
+        <section class="stopwatch_clock" >
+            <div class="elapsed_time"><span class="elapsed_hh_mm_ss" data-elapsed-time>00:00:00</span><span class="elapsed_ms" data-elapsed-ms>.000</span></div>
+            <div class="stopwatch_buttons">
+                <button class="start stopwatch_button" data-start-button><p data-start-text>Start</p></button>
+                <button class="stop stopwatch_button" data-stop-button><p>Stop</p></button>
+                <button class="reset stopwatch_button" data-reset-button><p data-reset-text>Reset</p></button>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <section class="footer container">
@@ -70,6 +79,7 @@
     
     <script src="./script/menu.js"></script>
     <script src="./script/theme.js"></script>
+    <script src="./script/stopwatch.js"></script>
 
 </body>
 </html>

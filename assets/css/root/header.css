@@ -57,14 +57,14 @@ header{
 
 .navigation_checkbox:checked{
     background-color: var( --black-3);
-    background-image: url(../img/icons/menu/check-lg.svg);
+    background-image: url(../../img/icons/menu/check-lg.svg);
 }
 
 .navigation_icon{
     width: 24px;
     height: 24px;
     z-index: 2;
-    background-image: url(../img/icons/menu/list.svg);
+    background-image: url(../../img/icons/menu/list.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;

@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#20242A"/>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/root.css">
-    <link rel="stylesheet" href="./assets/css/animations.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/root/reset.css">
+    <link rel="stylesheet" href="./assets/css/root/root.css">
+    <link rel="stylesheet" href="./assets/css/root/animations.css">
+    <link rel="stylesheet" href="./assets/css/root/header.css">
+    <link rel="stylesheet" href="./assets/css/root/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Timer | ClockApp_</title>
@@ -31,9 +31,8 @@
                     <p class="settings_button" data-settings-btn>Settings</p>
                     <nav class="settings_nav_list" data-settings data-visible="false">
                         <ul class="settings_list">
-                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings><h6>New setting</h6></li>
-                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings><h6>New setting</h6></li>
-                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings><h6>New setting</h6></li>
+                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings-hours24><h6>24 hours<br>format</h6></li>
+                            <li class="settings_item"><input class="navigation_checkbox" type="checkbox" data-settings-seconds><h6>Display<br>seconds</h6></li>
                         </ul>
                     </nav>
                 </li>

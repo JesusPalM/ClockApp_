@@ -80,7 +80,7 @@ main{
     font-family: "Montserrat", sans-serif;
     color: var(--white-0);
     outline: none;
-    background-image: url('../img/icons/menu/plus-circle.svg');
+    background-image: url('../../img/icons/menu/plus-circle.svg');
     background-position: right;
     background-size: contain;
     background-size: 16px 16px;
