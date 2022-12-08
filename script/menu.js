@@ -29,13 +29,13 @@ const mainMenu = document.querySelector("[data-main-menu]");
 
 const menuDesktopDisplay = () => {
     let mainMenuVisibility = mainMenu.getAttribute("data-visible");
-    while(window.innerWidth > 480){
+    while(window.innerWidth > 540){
         mainMenu.setAttribute("data-visible", true);
         mainMenu.style.animation = "none";
         mainMenu.style.display = "flex";
         break;
     }
-    while(window.innerWidth <= 480 && mainMenuVisibility === "true"){
+    while(window.innerWidth <= 540 && mainMenuVisibility === "true"){
         mainMenu.style.display = "flex";
         mainMenuButton.style.backgroundImage="url(../../assets/img/icons/menu/x.svg)";
         break;

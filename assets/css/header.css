@@ -70,7 +70,7 @@ header{
     cursor: pointer;
 }
 
-@media (min-width: 480px){
+@media (min-width: 540px){
     .main_navigation{
         position: initial;
         display: flex;
