@@ -1,7 +1,7 @@
 //Luxon date and time declaration
 
-export const DateTime = luxon.DateTime;
-export const currentDate = DateTime.now().setLocale('en');
+const DateTime = luxon.DateTime;
+const currentDate = DateTime.now().setLocale('en');
 
 //Local date and time value
 
@@ -10,9 +10,11 @@ const localAmPm = document.querySelector("[data-local-meridiem]");
 const localDate = document.querySelector("[data-local-date]");
 const localTimeZone = document.querySelector("[data-local-timeZone]");
 
+let hoursFormat = "hh:mm";
+
 const localDateTime = () => {
     const currentDate = DateTime.now().setLocale('en');
-    const currentLocalTime = currentDate.toFormat(hours + ":mm" + seconds);
+    const currentLocalTime = currentDate.toFormat(hoursFormat);
     const currentLocalMeridiem = currentDate.toFormat('a');
     const currentLocalDate = currentDate.toFormat('DD');
     const currentLocalUTC= currentDate.toFormat("Z");
@@ -21,51 +23,22 @@ const localDateTime = () => {
     localTime.innerHTML = currentLocalTime;
     localAmPm.innerHTML = currentLocalMeridiem;
     localDate.innerHTML = currentLocalDate;
-    localTimeZone.innerHTML = "UTC " + currentLocalUTC  + " | " + currentLocalIANAZone;
-}
+    localTimeZone.innerHTML = `UTC ${currentLocalUTC} | ${currentLocalIANAZone}`;
+};
 
 setInterval(localDateTime,1000);
 
 //Hour formatting
 
 const toggle24hours = document.querySelector("[data-settings-hours24]");
-const toggleSeconds = document.querySelector("[data-settings-seconds]")
+const toggleSeconds = document.querySelector("[data-settings-seconds]");
 
-let hours = "hh";
-let seconds = "";
-
-toggle24hours.addEventListener("click",() =>{
-    if(toggle24hours.checked){
-        hours = "HH";
-    }
-    else{
-        hours = "hh";
-    }
+toggle24hours.addEventListener("click", () => {
+    hoursFormat = toggle24hours.checked ? "HH:mm" : "hh:mm";
+    localTime.innerHTML = currentDate.toFormat(hoursFormat);
 });
 
-toggleSeconds.addEventListener("click",() =>{
-    if(toggleSeconds.checked){
-        seconds = ":ss";
-    }
-    else{
-        seconds = "";
-    }
+toggleSeconds.addEventListener("click", () => {
+    hoursFormat = toggleSeconds.checked ? `${hoursFormat}:ss` : hoursFormat.replace(":ss", "");
+    localTime.innerHTML = currentDate.toFormat(hoursFormat);
 });
-
-
-/*Abstract function to switch hour format
-
-const switchState = (toggle, _time, initialState, desiredState) =>{
-    if(toggle.checked){
-        _time = desiredState;
-        console.log(_time);
-    }else{
-        _time = initialState;
-        console.log(_time);
-    }; 
-};
-
-toggleSeconds.addEventListener ("click", ()=>{switchState(toggleSeconds, seconds, secondsF[1], secondsF[0]);});
-toggle24hours.addEventListener ("click", ()=>{switchState(toggle24hours, hours, hoursF[1], hoursF[0]);});
-
-*/

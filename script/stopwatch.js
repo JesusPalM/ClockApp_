@@ -16,27 +16,27 @@ const startStopwatch = () => {
     if(milliseconds >= 1000){
         milliseconds = 0;
         seconds++;
-        if(seconds == 60){
+        if(seconds === 60){
             seconds = 0;
             minutes++;
-            if(minutes == 60){
+            if(minutes === 60){
                 minutes = 0;
                 hours++;
             }
         }
     }
 
-    let h = hours < 10 ? "0" + hours : hours;
-    let m = minutes < 10 ? "0" + minutes : minutes;
-    let s = seconds < 10 ? "0" + seconds : seconds;
-    let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds ;
+    const hoursString = String(hours).padStart(2, "0");
+    const minutesString = String(minutes).padStart(2, "0");
+    const secondsString = String(seconds).padStart(2, "0");
+    const millisecondsString = String(milliseconds).padStart(3, "0");
     
     startButton.style.display = "none";
     stopButton.style.display = "inline-block";
     resetButton.style.display = "inline-block";
     startButtonText.innerHTML = "Resume";
-    elaspedTime.innerHTML = `${h}:${m}:${s}`;
-    elapsedMilliseconds.innerHTML = `.${ms}`
+    elaspedTime.innerHTML = `${hoursString}:${minutesString}:${secondsString}`;
+    elapsedMilliseconds.innerHTML = `.${millisecondsString}`
 };
 
 const stopStopwatch = () => {
