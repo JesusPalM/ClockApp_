@@ -15,7 +15,7 @@ const themes = {
 
 const checkboxToggle = (checkbox) =>{
     const checkboxes = document.getElementsByClassName("navigation_checkbox");
-    for (let i = 0; i < checkboxes.length; i++) {
+    for (let i = 0; i < checkboxes.length; i++){
         checkboxes[i].checked = false;
     }
     checkbox.checked = true;
