@@ -14,6 +14,7 @@ const handleWindowResize  = () => {
     }else{
         mainMenu.setAttribute("data-visible", false);
         mainMenu.style.display = "none";
+        mainMenuButton.style.backgroundImage="url(../../assets/img/icons/menu/list.svg)"
     }    
 };
 

@@ -9,8 +9,6 @@ const startButtonText = document.querySelector("[data-start-text]");
 const elaspedTime = document.querySelector("[data-elapsed-time]");
 const elapsedMilliseconds = document.querySelector("[data-elapsed-ms]");
 
-startButton.addEventListener("click", () => {interval = setInterval(startStopwatch, 10)});
-
 const startStopwatch = () => {
     milliseconds +=10;
     if(milliseconds >= 1000){
@@ -36,7 +34,7 @@ const startStopwatch = () => {
     resetButton.style.display = "inline-block";
     startButtonText.innerHTML = "Resume";
     elaspedTime.innerHTML = `${hoursString}:${minutesString}:${secondsString}`;
-    elapsedMilliseconds.innerHTML = `.${millisecondsString}`
+    elapsedMilliseconds.innerHTML = `.${millisecondsString}`;
 };
 
 const stopStopwatch = () => {
@@ -51,9 +49,10 @@ const resetStopwatch = () => {
     stopButton.style.display = "none";
     resetButton.style.display = "none"; 
     startButtonText.innerHTML = "Start";
-    elaspedTime.innerHTML = "00:00:00"
+    elaspedTime.innerHTML = "00:00:00";
     elapsedMilliseconds.innerHTML = ".000";
 };
 
+startButton.addEventListener("click", () => {interval = setInterval(startStopwatch, 10)});
 stopButton.addEventListener("click", stopStopwatch);
 resetButton.addEventListener("click", resetStopwatch);

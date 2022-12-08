@@ -51,7 +51,17 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <input type="number" id="input_element">
+        <div class="timer_value" data-timer-value>
+            <span data-timer-hours>00</span><span>:</span><span data-timer-minutes>00</span><span>:</span><span data-timer-seconds>00</span>
+        </div>
+        <div class="timer_buttons">
+            <button class="start timer_button" data-start-button><p data-start-text>Start</p></button>
+            <button class="stop timer_button" data-stop-button><p>Stop</p></button>
+            <button class="reset timer_button" data-reset-button><p data-reset-text>Reset</p></button>
+        </div>
+    </main>
 
     <footer>
         <section class="footer container">
@@ -71,6 +81,7 @@
     <script type="module" src="./script/root/toggleDisplay.js"></script>
     <script type="module" src="./script/root/menu.js"></script>
     <script type="module" src="./script/root/theme.js"></script>
+    <script src="./script/timer.js"></script>
 
 </body>
 </html>
