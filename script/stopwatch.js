@@ -42,7 +42,6 @@ const startStopwatch = () => {
 const stopStopwatch = () => {
     clearInterval(interval);
     startButton.style.display = "inline-block";
-    stopButton.style.cursor = "not-allowed";
 };
 
 const resetStopwatch = () => {
