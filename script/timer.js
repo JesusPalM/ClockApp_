@@ -21,15 +21,15 @@ inputElement.addEventListener("input", () => {
 timerValue.style.display = "none";
 
 let hours = 0;//Here it has to be a not zero value or ask for user input
-let minutes = 0;//Here it has to be a not zero value or ask for user input
-let seconds = 0;//Here it has to be a not zero value or ask for user input
+let minutes = 1;//Here it has to be a not zero value or ask for user input
+let seconds = 10;//Here it has to be a not zero value or ask for user input
 
 const startTimer = () => {
     seconds -= 1;
-    if (seconds < 0){
+    if (seconds == 0){
         seconds = 59;
         minutes -= 1;
-        if(minutes < 0){
+        if(minutes == 0){
             minutes = 59;
             hours -= 1;
         }
